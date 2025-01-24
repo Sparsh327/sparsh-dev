@@ -16,6 +16,8 @@
       <!-- {headerScripts} -->
 
       <!-- Core CSS -->
+      <title>Sparsh Jaiswal</title>
+      <link rel="icon" type="image/x-icon" href="https://firebasestorage.googleapis.com/v0/b/ucall-5de85.appspot.com/o/sparsh5-Photoroom-photoaidcom-cropped%20(1).jpg?alt=media&token=1a3a3384-6cc7-4557-9058-363a258f049a">
       <script src="https://cdn.tailwindcss.com"></script>
       <script>
         tailwind.config = {
@@ -471,7 +473,7 @@
             Specialized in building scalable, high-performance applications.
           </p>
           <div class="flex gap-4" id="el-gty7z9d0">
-            <a href="#contact" class="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg transition-colors animate__animated animate__pulse animate__infinite" id="el-pde1ht9s">
+            <a  id="downloadBtn" class="px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg transition-colors animate__animated animate__pulse animate__infinite" id="el-pde1ht9s">
               Hire Me
             </a>
             <a href="#portfolio" class="px-6 py-3 border border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white rounded-lg transition-all" id="el-fyk7zqll">
@@ -540,6 +542,24 @@
       animation-delay: 2s;
     }
   </style>
+  <script>
+    document.getElementById('downloadBtn').addEventListener('click', function() {
+        // Path to PDF in assets folder
+        const pdfUrl = 'assets/sparsh_resume.pdf';
+        
+        // Create a temporary anchor element
+        const link = document.createElement('a');
+        link.href = pdfUrl;
+        
+        // Set the download attribute with desired filename
+        link.download = 'downloaded-document.pdf';
+        
+        // Append to the body, click programmatically, then remove
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+</script>
 </div>
 </htmlcode>
               
@@ -808,19 +828,22 @@
       <!-- Project Card 2 -->
       <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2" id="el-bgx0zr3t">
         <div class="p-6" id="el-h1c7h3sh">
-          <h3 class="text-2xl font-bold text-neutral-900 mb-3" id="el-6xwm44vj">Social Platform</h3>
-          <p class="text-neutral-600 mb-4" id="el-h16ockjg">Modern social networking app with real-time messaging and interactive stories.</p>
+          <h3 class="text-2xl font-bold text-neutral-900 mb-3" id="el-6xwm44vj">HolaHome</h3>
+          <p class="text-neutral-600 mb-4" id="el-h16ockjg">Developed a comprehensive property rental web application that empowers property owners to list, manage, and rent properties through an intuitive platform. The application features advanced search functionality, interactive map views, secure booking systems, and seamless user-to-landlord transitions.</p>
           <div class="flex flex-wrap gap-2 mb-4" id="el-nrm3nfw3">
-            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm" id="el-av7iypsv">React Native</span>
-            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm" id="el-tgt0uoyy">GraphQL</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm" id="el-av7iypsv">Flutter</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm" id="el-tgt0uoyy">Bloc</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm" id="el-av7iypsv">Node.js</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm" id="el-tgt0uoyy">PostgreSQL</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm" id="el-av7iypsv">Firebase</span>
           </div>
           <div class="flex justify-between items-center" id="el-loyzknrp">
-            <button onclick="openVideoPlayer('project2-demo.mp4')" class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors" id="el-e7p6sw5c">
+            <button onclick="openVideoPlayer('https://firebasestorage.googleapis.com/v0/b/property-guru-924ba.appspot.com/o/Screen%20Recording%202025-01-24%20at%2012.30.59%E2%80%AFAM.mov?alt=media&token=c63e1500-9438-42be-a1a4-99983196ab63')" class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors" id="el-e7p6sw5c">
               View Demo
             </button>
-            <a href="https://github.com" class="text-purple-600 hover:text-purple-700 transition-colors" id="el-g8kz0dk0">
+            <!-- <a href="https://github.com" class="text-purple-600 hover:text-purple-700 transition-colors" id="el-g8kz0dk0">
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" id="el-ozr2vj2n"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" id="el-w1f6htxr"></path></svg>
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
@@ -828,19 +851,25 @@
       <!-- Project Card 3 -->
       <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2" id="el-u5h3pn7t">
         <div class="p-6" id="el-m6g4kwzk">
-          <h3 class="text-2xl font-bold text-neutral-900 mb-3" id="el-rkiy46og">Task Management</h3>
-          <p class="text-neutral-600 mb-4" id="el-mh8zuwnc">Enterprise-grade task management solution with team collaboration features.</p>
+          <h3 class="text-2xl font-bold text-neutral-900 mb-3" id="el-rkiy46og">UCall</h3>
+          <p class="text-neutral-600 mb-4" id="el-mh8zuwnc">Developed a service marketplace platform where providers (plumbers, electricians, etc.) create profiles, manage wallets, and receive leads via a points-based system. Key features include geolocation-based search, automated slot generation, real-time chat, and booking management.</p>
           <div class="flex flex-wrap gap-2 mb-4" id="el-di1epcat">
             <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm" id="el-ghljdyjj">Flutter</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm" id="el-ghljdyjj">Riverpod</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm" id="el-9klhrqz6">Firebase</span>
             <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm" id="el-9klhrqz6">Node.js</span>
           </div>
           <div class="flex justify-between items-center" id="el-ku7k4rmj">
-            <button onclick="openVideoPlayer('project3-demo.mp4')" class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors" id="el-ofpz0fsu">
+            <button onclick="openVideoPlayer('https://firebasestorage.googleapis.com/v0/b/property-guru-924ba.appspot.com/o/Screen%20Recording%202025-01-23%20at%204.40.33%E2%80%AFPM.mov?alt=media&token=40475063-5c8c-4b0a-a6bf-feb750dab679')" class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors" id="el-ofpz0fsu">
               View Demo
             </button>
-            <a href="https://github.com" class="text-purple-600 hover:text-purple-700 transition-colors" id="el-joibl4e0">
+            <button onclick="location.href='https://ucall-lw.web.app/'" class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors" id="el-ofpz0fsu">
+              Website
+            </button>
+           
+            <!-- <a href="https://github.com" class="text-purple-600 hover:text-purple-700 transition-colors" id="el-joibl4e0">
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" id="el-l0c1ieek"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" id="el-wppdt3sa"></path></svg>
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
@@ -858,7 +887,7 @@
             <button onclick="openVideoPlayer('project4-demo.mp4')" class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors" id="el-4vwd4psl">
               View Demo
             </button>
-            <a href="https://github.com" class="text-purple-600 hover:text-purple-700 transition-colors" id="el-l9qdyega">
+            <a href="https://github.com/Sparsh327/Metube" class="text-purple-600 hover:text-purple-700 transition-colors" id="el-l9qdyega">
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" id="el-ysuou6ne"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" id="el-v7fgp7yr"></path></svg>
             </a>
           </div>
@@ -888,14 +917,17 @@
       <!-- Project Card 6 -->
       <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2" id="el-1bdrfxr2">
         <div class="p-6" id="el-11oalxw1">
-          <h3 class="text-2xl font-bold text-neutral-900 mb-3" id="el-ozdd6paq">Smart Home System</h3>
-          <p class="text-neutral-600 mb-4" id="el-zb0kqo9k">IoT-based home automation platform with voice control and energy monitoring.</p>
+          <h3 class="text-2xl font-bold text-neutral-900 mb-3" id="el-ozdd6paq">MeTube</h3>
+          <p class="text-neutral-600 mb-4" id="el-zb0kqo9k">Developed a Flutter CRUD app with video player integration, featuring YouTube-style autoplay in list views. Demonstrated Clean Architecture, SOLID principles and dependency injection.</p>
           <div class="flex flex-wrap gap-2 mb-4" id="el-haa8ncmo">
-            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm" id="el-zmi3619o">React</span>
-            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm" id="el-a5unqkqu">AWS IoT</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm" id="el-zmi3619o">Flutter</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm" id="el-a5unqkqu">Bloc</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm" id="el-zmi3619o">get_it</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm" id="el-a5unqkqu">Supabase</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm" id="el-a5unqkqu">Clean Architecture</span>
           </div>
           <div class="flex justify-between items-center" id="el-bf21fj4j">
-            <button onclick="openVideoPlayer('project6-demo.mp4')" class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors" id="el-b0f4q65h">
+            <button onclick="openVideoPlayer('https://firebasestorage.googleapis.com/v0/b/property-guru-924ba.appspot.com/o/Screen%20Recording%202025-01-23%20at%2010.34.48%E2%80%AFPM%20(online-video-cutter.com).mp4?alt=media&token=e686d8d2-92c3-473f-ba62-5b41265c2975')" class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors" id="el-b0f4q65h">
               View Demo
             </button>
             <a href="https://github.com" class="text-purple-600 hover:text-purple-700 transition-colors" id="el-g8duw9vl">
@@ -949,6 +981,7 @@
       modal.classList.add('hidden');
     }
   </script>
+  
 </section>
 </div>
 </htmlcode>
